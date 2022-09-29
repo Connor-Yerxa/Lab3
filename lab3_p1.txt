@@ -1,0 +1,12 @@
+1. The snapshot is taken from the staging, and is stored in the local repository.
+
+2. git commit -m "this is the message"
+
+3. git add .
+
+4. git commit --amend -m "this is the fixed message"
+
+5. revert maintains the history chain but reset --soft will keep the current workspace but delete everthing that was done before the location you are reseting to.
+reset --hard is like reset --soft but it doesn't keep the workspace.
+
+6. if you use (git checkout "a previous commit") then you use (git checkout name_of_test_branch), this head not be apart of the main.
